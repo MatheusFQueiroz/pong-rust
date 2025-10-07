@@ -1,0 +1,17 @@
+[package]
+name = "pong-rust"
+description = "Jogo Pong em Rust para fins educacionais"
+version = "2.0.0"
+edition = "2021"
+license = "MIT"
+
+[[bin]]
+name = "pong-rust"
+path = "src/main.rs"
+
+[dependencies]
+# SDL2 para renderização gráfica, áudio e entrada de teclado/mouse
+sdl2 = { version = "0.38.0", features = ["mixer", "ttf"] }
+
+# Gerador de números aleatórios
+rand = "0.9.2"
